@@ -1,0 +1,21 @@
+@{
+    ViewData["Title"] = "Aceptar invitacion para el evento";
+}
+<link rel="stylesheet" href="~/css/confirmacion.css">
+
+<div class="contenedor">
+    <form id="form-aceptar">
+        <h1>@ViewData["Title"]</h1>
+        <hr>
+        <p>ID de la Invitacion: <span id="id-invitacion"></span></p>
+        <p>Correo de invitación: <span id="correo-invitacion"></span></p>
+        <p>Id del evento: <span id="id-evento"></span></p>
+        <p>Título del evento: <span id="titulo-evento"></span></p>
+        <p>Descripción del evento: <span id="descripcion-evento"></span></p>
+        <p>Asistencia: <span id="asistencia"></span></p>
+
+        <button type="submit" id="boton" class="btn btn-info">Confirmar Asistencia</button>
+    </form>
+</div>
+
+<script src="~/js/confirmacion.js"></script>

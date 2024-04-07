@@ -1,0 +1,39 @@
+﻿@{
+    ViewData["Title"] = "Eventos";
+}
+
+<link rel="stylesheet" href="~/css/listaEventos.css">
+
+<div class="contenedor">
+    <form id="form-invitar">
+        <h1 class="display-4">Invitar a eventos</h1>
+        <hr>
+        <label for="IdEvento">Evento</label>
+        <select name="IdEvento" id="IdEvento">
+            <option value="">Seleccione la ID o nombre del evento</option>
+        </select>
+
+        <label for="correo_invitado">Correo del invitado</label>
+        <input type="email" name="correo_invitado" id="correo_invitado" required>
+
+        <button type="submit" class="btn btn-info">Invitar al evento</button>
+    </form>
+</div>
+
+
+<h2>Lista de eventos</h2>
+<div id="eventos-container">
+    <table class="table"  id="tabla-eventos">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Descripción</th>
+                <th>Fecha</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+<script src="~/js/listaEventos.js"></script>

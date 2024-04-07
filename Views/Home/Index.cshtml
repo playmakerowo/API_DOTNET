@@ -1,0 +1,23 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+<link rel="stylesheet" href="~/css/index.css">
+
+<div class="contenedor">
+    <form id="form-evento">
+        <h1 class="display-4">Crear evento</h1>
+        <hr>
+        <label for="titulo">Nombre del evento</label>
+        <input type="text" name="titulo" id="titulo">
+
+        <label for="descripcion">Descripcion del evento</label>
+        <input type="text" name="descripcion" id="descripcion">
+
+        <label for="fecha">Fecha del evento</label>
+        <input id="fecha" width="276" />
+
+        <button type="submit" class="btn btn-info">Crear evento</button>
+    </form>
+</div>
+
+<script src="~/js/index.js"></script>
